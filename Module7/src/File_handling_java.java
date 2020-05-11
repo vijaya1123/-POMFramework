@@ -21,9 +21,7 @@ public class File_handling_java {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println(f.exists());
-		
-		
+		System.out.println(f.exists());	
 		//write
 		try {
 			FileWriter fw = new FileWriter("F:\\temp\\selenium.txt");
@@ -41,8 +39,6 @@ public class File_handling_java {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
 		
 		//read
 		try {
