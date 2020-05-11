@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [My Sample Suite]">
+  <listeners>
+    <listener class-name="com.fedphe.Listeners.Listener"/>
+  </listeners>
+  <test name="Test Listeners">
+    <classes>
+      <class name="com.fedphe.Listeners.TestListener2">
+        <methods>
+          <include name="loginbyemail"/>
+          <include name="loginbyfacebook"/>
+        </methods>
+      </class> <!-- com.fedphe.Listeners.TestListener2 -->
+    </classes>
+  </test> <!-- Test Listeners -->
+  <test name="Test Listeners(failed)">
+    <classes>
+      <class name="com.fedphe.Listeners.TestListener2">
+        <methods>
+          <include name="loginbyfacebook"/>
+        </methods>
+      </class> <!-- com.fedphe.Listeners.TestListener2 -->
+    </classes>
+  </test> <!-- Test Listeners(failed) -->
+</suite> <!-- Failed suite [My Sample Suite] -->
